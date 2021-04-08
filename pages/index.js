@@ -293,6 +293,6 @@ export async function getStaticProps() {
       packagesSection: data.packagesSectionCollection.items[0],
       inspirationalSection: data.inspirationalMessageSectionCollection.items[0]
     },
-    revalidate: 5,
+    revalidate: 10,
  };
 }
