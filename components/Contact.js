@@ -81,7 +81,7 @@ const Contact = () => {
                         <div className="contact-item contact-item3">
                             <h3 className="contact__title">Contact</h3>
                             <p className="contact__desc">
-                                email@comething.com <br />
+                                info@ahimsa.garden <br />
                                 whatsApp +41 76 468 30 33
                             </p>
                         </div>
