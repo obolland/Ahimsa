@@ -1,6 +1,43 @@
-import React from 'react';
+import React, {useState} from 'react';
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+    const [formData, setFormData] =
+  useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  })
+  const { name, email, phone, message } = formData;
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    
+    emailjs.sendForm('service_46qv27g', 'template_frh3tfw', event.target, 'user_CeUFgLS0y9mViIM0qPkKp')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
+
+    toast.success("Your message has been sent!")
+  }
+
+  const handleChange = (event) => {
+    const { value, name } = event.target;
+    setFormData({ ...formData, [name]: value })
+  }
+
     return (
         <section className="contact-area">
             <div className="container">
@@ -28,25 +65,46 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="form-shared">
-                            <form action="#" method="post">
+                            <form onSubmit={onSubmit}>
                                 <div className="row">
                                     <div className="col-lg-6 col-sm-6 form-group">
-                                        <input className="form-control" type="text" name="name" placeholder="Full Name" />
+                                        <input 
+                                            className="form-control"
+                                            onChange={handleChange}
+                                            value={name}
+                                            type="text"
+                                            name="name"
+                                            placeholder="Full Name" />
                                     </div>
 
                                     <div className="col-lg-6 col-sm-6 form-group">
-                                        <input className="form-control" type="email" name="email"
-                                               placeholder="Email Address" />
+                                        <input
+                                            className="form-control"
+                                            onChange={handleChange}
+                                            value={email}
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email Address" />
                                     </div>
 
                                     <div className="col-lg-12 form-group">
-                                        <input className="form-control" type="number" name="phone"
-                                               placeholder="Phone Number" />
+                                        <input
+                                            className="form-control"
+                                            onChange={handleChange}
+                                            value={phone}
+                                            type="number"
+                                            name="phone"
+                                            placeholder="Phone Number" />
                                     </div>
 
                                     <div className="col-lg-12 col-sm-12 form-group">
-                                        <textarea className="textarea" name="message"
-                                                  placeholder="Write a Message"></textarea>
+                                        <textarea
+                                            className="textarea"
+                                            onChange={handleChange}
+                                            value={message}
+                                            type="text"
+                                            name="message"
+                                            placeholder="Write a Message"></textarea>
                                     </div>
 
                                     <div className="col-lg-12 col-sm-12">
@@ -88,6 +146,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </section>
     );
 };
