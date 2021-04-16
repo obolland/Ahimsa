@@ -29,7 +29,8 @@ class MixerAreaThree extends Component {
                                 <p className="section__desc text__white">
                                     {mainText}
                                 </p>
-                                <a href="#" className="theme-btn">Donate Now</a>
+                                {/* <a href="#" className="theme-btn">Donate Now</a> */}
+                                <div className="powr-stripe-button theme-btn" id="f04c986b_1618559744"></div>
                             </div>
                         </div>
                         <div className="col-lg-6">

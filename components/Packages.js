@@ -199,8 +199,9 @@ const PackagesArea = ({
       <div className="row">
           <div className="col-lg-12 mt-4 mb-4 text-center">
               <div className="button-shared">
-                  <a href="/donate" className="theme-btn">donate
-                      now</a>
+                  {/* <a href="/donate" className="theme-btn">donate
+                      now</a> */}
+                  <div className="powr-stripe-button" id="f04c986b_1618559744"></div>
               </div>
           </div>
       </div>
@@ -234,8 +235,9 @@ const PackagesArea = ({
       <div className="row">
           <div className="col-lg-12 mt-4 mb-4 text-center">
               <div className="button-shared">
-                  <a href="/donate" className="theme-btn">donate
-                      now</a>
+                  {/* <a href="/donate" className="theme-btn">donate
+                      now</a> */}
+                  <div className="powr-stripe-button" id="f04c986b_1618559744"></div>
               </div>
           </div>
       </div>
@@ -269,8 +271,9 @@ const PackagesArea = ({
       <div className="row">
           <div className="col-lg-12 mt-4 mb-4 text-center">
               <div className="button-shared">
-                  <a href="/donate" className="theme-btn">donate
-                      now</a>
+                  {/* <a href="/donate" className="theme-btn">donate
+                      now</a> */}
+                  <div className="powr-stripe-button" id="f04c986b_1618559744"></div>
               </div>
           </div>
       </div>
@@ -304,8 +307,9 @@ const PackagesArea = ({
       <div className="row">
           <div className="col-lg-12 mt-4 mb-4 text-center">
               <div className="button-shared">
-                  <a href="/donate" className="theme-btn">donate
-                      now</a>
+                  {/* <a href="/donate" className="theme-btn">donate
+                      now</a> */}
+                  <div className="powr-stripe-button" id="f04c986b_1618559744"></div>
               </div>
           </div>
       </div>

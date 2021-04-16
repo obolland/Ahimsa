@@ -32,6 +32,7 @@ export default function HomePage({
     <>
         <Head>
           <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
+          <script src="https://www.powr.io/powr.js?platform=html"></script>
         </Head>
 
         <Layout pageTitle="Ahimsa Tribe - Garden Of Earthen Delights - Costa Rica">

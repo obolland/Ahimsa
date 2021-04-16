@@ -41,7 +41,7 @@ class NavTwo extends Component {
                                     <div className="ostion-logo">
                                         <Link href="/">
                                             <a href="">
-                                                <img src="/Logo_Ahimsa_rev003.png" alt="Oxpitan" title="Oxpitan" />
+                                                <img src="/Logo_Ahimsa_rev003.png" alt="Ahimsa" title="Ahimsa" />
                                             </a>
                                         </Link>
                                     </div>

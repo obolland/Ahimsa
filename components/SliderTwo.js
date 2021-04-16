@@ -9,7 +9,8 @@ const SliderTwo = ({ title, subTitle }) => {
             <div className="landing-heading">
                 <p className="landing__meta">{subTitle}</p>
                 <h2 className="landing__title">{title}</h2>
-                <a href="#" className="theme-btn">donate now</a>
+                <div class="powr-stripe-button" id="f04c986b_1618559744"></div>
+                {/* <a href="#" className="theme-btn">donate now</a> */}
             </div>
         </section>
     );
