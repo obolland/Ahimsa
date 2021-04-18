@@ -15,7 +15,8 @@ const CallToAction = ({ mainText }) => {
                                     mainText
                                 }
                             </h2>
-                            <a href="/donate" className="theme-btn">start donation</a>
+                            {/* <a href="/donate" className="theme-btn">start donation</a> */}
+                            <div className="powr-stripe-button" id="f04c986b_1618559744"></div>
                         </div>
                     </div>
                 </div>

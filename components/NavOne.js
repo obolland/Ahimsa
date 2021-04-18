@@ -94,9 +94,10 @@ class NavOne extends Component {
                                             </Link>
                                         </div>
                                         <div className="header-btn ml-auto">
-                                            <Link href="/donate">
+                                            {/* <Link href="/donate">
                                                 <a className="theme-btn">donate now</a>
-                                            </Link>
+                                            </Link> */}
+                                            <div className="powr-stripe-button ml-5" id="f04c986b_1618559744"></div>
                                         </div>
                                     </div>
                                 </div>
