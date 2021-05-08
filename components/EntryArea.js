@@ -13,7 +13,7 @@ class EntryArea extends Component {
         this.setState({isOpen: !this.state.isOpen})
     }
     render() {
-        const { mainTitle, secondTitle, subText, videoImg } = this.props;
+        const { mainTitle, secondTitle, subText, videoImg, videoId } = this.props;
 
         return (
             <section className="entry-area">
@@ -33,7 +33,7 @@ class EntryArea extends Component {
                                     <div className="col-lg-4">
                                         <div className="entry-video-img">
                                             <img src={videoImg} alt="entry-video-img" />
-                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='PbUxi2Lx8x8' onClose={this.handleModal} />
+                                            <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={videoId} onClose={this.handleModal} />
                                                 <div onClick={this.handleModal} className="mfp-iframe video-play-btn"
                                                    title="Play Video"><i className="fa fa-play"></i>
                                                 </div>

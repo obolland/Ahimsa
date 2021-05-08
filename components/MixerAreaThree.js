@@ -14,7 +14,7 @@ class MixerAreaThree extends Component {
     }
 
     render() {
-        const { mainTitle, subTitle, mainText, videoImg } = this.props;
+        const { mainTitle, subTitle, mainText, videoImg, videoId } = this.props;
         return (
             <section className="mixer-area mixer-area3 mixer-area4" id="why">
                 <div className="container">
@@ -36,7 +36,7 @@ class MixerAreaThree extends Component {
                         <div className="col-lg-6">
                             <div className="mixer-video-content">
                                 <img src={videoImg} alt=""/>
-                                <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='RQu7jpcNUWI'
+                                <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={videoId}
                                             onClose={() => this.setState({isOpen: false})}/>
                                 <div onClick={this.openModal} className="mfp-iframe video-play-btn" title="Play Video">
                                     <i
