@@ -47,12 +47,14 @@ export default function HomePage({
             secondTitle={intoSection.secondTitle} 
             subText={intoSection.subText} 
             videoImg={intoSection.videoPlaceholderImage.url}
+            videoId={intoSection.youTubeVideoId}
           />
           <MixerAreaThree
             mainTitle={donateSection.donationHeading}
             subTitle={donateSection.subHeading} 
             mainText={donateSection.donationTextContent} 
             videoImg={donateSection.videoImagePlaceholder.url}
+            videoId={donateSection.youTubeVideoId}
           />
           <ServiceArea 
             mainTitle={offerSection.sectionTitle}
@@ -174,6 +176,7 @@ export async function getStaticProps() {
           videoImagePlaceholder {
             url
           }
+          youTubeVideoId
         }
       }
       introSectionCollection {
@@ -184,6 +187,7 @@ export async function getStaticProps() {
           videoPlaceholderImage {
             url
           }
+          youTubeVideoId
         }
       }
       packagesSectionCollection {
